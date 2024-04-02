@@ -12,46 +12,50 @@
     <title>Home</title>
 
     <!-- Bootstrap Core CSS ––––––––––––––––––––––––––– -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- Custom CSS ––––––––––––––––––––––––––– -->
     <!-- Active the custom CSS link by removing the comment marks -->
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
     <!-- Fontawesome ––––––––––––––––––––––––––– -->
     <script src="https://kit.fontawesome.com/5c9f2dfb26.js"></script>
     <!-- Favicon––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
     <style>
-        h1 {text-align: center;}
-    
-        p {text-align: center;}
-        div {text-align: right;}
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        div {
+            text-align: right;
+        }
     </style>
-    
+
 </head>
 
 <body class="home">
-        
-	<nav class="navigation">
-		<div class="logo">
-			<a href="index.html"><img class="img-fluid" src="img/logoforwebsite.png" alt="" width="100"
-					height="100" /></a>
-		</div>
 
-		<div>
-			<ul>
-				<li class="active-page"><a href="index.html">Home</a></li>
-				<li><a href="#cart">Cart</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-        
+    <nav class="navigation">
+        <div class="logo">
+            <a href="index.html"><img class="img-fluid" src="img/logoforwebsite.png" alt="" width="100"
+                    height="100" /></a>
+        </div>
+
+        <div>
+            <ul>
+                <li class="active-page"><a href="index.html">Home</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Start editing your contents from the Main content -->
     <!-- <div class="topnav align-items-right">
       
@@ -64,43 +68,155 @@
       </div>
     </div> -->
     <!--   Main content-->
-<div>
-
- <h1><b>Welcome to my Shop!</b></h1>
- </div>
-
-<p class="lead">I sell stickers and art prints...</p>
-</div>
-<div class="container">
-<div class="row justify-content-center text-center">
-    <div class="col-md-4 thumbs">
-        <img class="img-fluid" src="img/pomstickers.jpeg"  alt="product image"  />
-        <h4 class="text-center">Pomegranite Stickers</h4>
-        <h5 class="text-center">5.00 USD</h5>
+    <div>
+        <h1><b>Welcome to my Shop!</b></h1>
     </div>
 
-</div>
-</div> 
-<div class="container">
-<div class="row justify-content-center text-center">
-    <div class="col-md-4 thumbs">
-        <img class="img-fluid " src="img/salmonstickers.jpg"  alt="salmon stickers image" />
-        <h4 class="text-center">Salmon Stickers</h4>
-        <h5 class="text-center">5.00 USD</h5>
-    </div>
-  </div>
 
-</div>
-<div class="container">
-<div class="row justify-content-center text-center">
-    <div class="col-md-4 thumbs">
-        <img class="img-fluid " src="img/duckprint2.jpg"  alt="product image" />
-        <h4 class="text-center">Wood Duck Prints</h4>
-        <h5 class="text-center">15.00 USD</h5>
+    <p class="lead">I sell stickers and art prints...</p>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+
+            <div class="modal-content my-modal">
+                <div class="modal-header">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Product Description</h1> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    THIS GETS REPLACED
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
-    </div>
-    <footer>  
+
+
+
+
+
+    <div class="container"><!-- BEGIN: MAIN CONTAINER -->
+
+        <!-- =================== -->
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4 thumbs">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="modal-for-pom">
+                    <img class="img-fluid prodimg" src="img/pomstickers.jpeg" alt="product image" />
+                </a>
+                <h4 class="text-center">Pomegranate Stickers</h4>
+                <h5 class="text-center">5.00 USD</h5>
+                <div id="modal-for-pom" style="display: none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="contact page text-left heads">Pomegranate Stickers</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class="contact-hero img-fluid" src="img/pomstickers.jpeg" alt="profile img" />
+
+                            </div>
+                            <div class="col-sm-8">
+
+
+                                <div class="">
+                                    <p class="text-left pairs">These pomegranate stickers are waterproof and dishwasher
+                                        safe.
+                                        They would be a gread addition to your phone,laptop, or water bottle! </p>
+                                    <p>5.00 USD</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h1 class="text-left heads">Pomegranate Stickers</h1>
+                    <div class="align-items-center"> <img class="img-fluid" src="img/pomstickers.jpeg" alt="product image" width="500"/>
+                    <p class="text-left">These pomegranate stickers are waterproof and dishwasher safe. </p>
+                    <p>5.00 USD</p> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- =================== -->
+
+        <!-- =================== -->
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4 thumbs">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="modal-for-salmon">
+                    <img class="img-fluid prodimg" src="img/salmonstickers.jpg" alt="salmon stickers image" />
+                </a>
+                <h4 class="text-center">Salmon Stickers</h4>
+                <h5 class="text-center">5.00 USD</h5>
+
+                <div id="modal-for-salmon" style="display: none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="contact page text-left heads">Pomegranate Stickers</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class="contact-hero img-fluid" src="img/salmonstickers.jpg" alt="profile img" />
+                            </div>
+                            <div class="col-sm-8">
+
+                                <div class="">
+                                    <p class="text-left pairs">These salmon stickers are waterproof and dishwasher
+                                        safe.
+                                        They would be a gread addition to your phone,laptop, or water bottle! </p>
+                                    <p>5.00 USD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- =================== -->
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4 thumbs">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="modal-for-duck">
+                    <img class="img-fluid prodimg" src="img/duckprint2.jpg" alt="product image" />
+                </a>
+                <h4 class="text-center">Wood Duck Prints</h4>
+                <h5 class="text-center">15.00 USD</h5>
+
+                <div id="modal-for-duck" style="display: none">
+                    <div class="container">
+                        <h1 class="text-left heads">Wood Duck Prints</h1>
+                        <div class="row">
+                            <div class="col-sm-4"><img class="img-fluid" src="img/duckprint2.jpg" alt="product image"
+                                    width="300" /></div>
+                            <div class="col-sm-8">
+                                <p class="">These wood duck prints are a standard 8.5x11 on matte paper.</p>
+                                <p class="text-right">15.00 USD</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =================== -->
+
+    </div><!-- END: MAIN CONTAINER -->
+
+    <footer>
         <div class="container-fluid ">
             <div class="row justify-content-between align-items-center">
                 <div class="col-sm-auto text-center">
@@ -109,28 +225,44 @@
                     <a class="social" href=" "><i class="fab fa-facebook-f"></i></a>
                     <a class="social" href=" "><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="col-sm-auto text-center" >
+                <div class="col-sm-auto text-center">
                     <a href="http://alexseydc.art" target="_blank">Check out my Portfolio!</a>
                     <p>Copyright © Date Name. All rights reserved.</p>
-                
+
                 </div>
 
             </div>
         </div>
     </footer>
     <!--end of footer-->
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const exampleModal = document.getElementById('exampleModal')
+        if (exampleModal) {
+            exampleModal.addEventListener('show.bs.modal', event => {
+                // Button that triggered the modal
+                const button = event.relatedTarget
+                // Extract info from data-bs-* attributes
+                const id_of_idv = button.getAttribute('data-bs-whatever')
+                // If necessary, you could initiate an Ajax request here
+                // and then do the updating in a callback.
+
+                const newContent = document.getElementById(id_of_idv);
+
+                const modalBody = exampleModal.querySelector('.modal-body');
+                modalBody.innerHTML = newContent.innerHTML;
+            })
+        }
+    </script>
 
 </body>
 
 </html>
-
-
-

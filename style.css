@@ -91,7 +91,7 @@ footer {
   .navigation li {
     float: none;
     padding: .5em;
-    border-bottom: 1px solid rgb(181, 231, 208);;
+    border-bottom: 1px solid rgb(181, 231, 208);
   }
 
   .navigation li a {
@@ -111,4 +111,29 @@ footer {
 
 .navigation a:hover {
   color: rgb(128, 59, 22);
+}
+
+.logo {
+padding:20px 30px
+
+}
+
+.prodimg {
+  /* -webkit-transition: transform 2s ease-in-out; */
+  /* -moz-transition: transform 2s ease-in-out; */
+  transition: transform .1s ease-in-out;
+}
+.prodimg:hover {
+  transform: scale(105%);
+}
+
+.my-modal {
+  background-color: rgb(247, 247, 234);
+}
+
+.heads{
+background-color:rgb(222, 118, 33);
+color: rgb(181, 231, 208);
+padding: 2rem
+
 }
