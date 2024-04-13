@@ -7,7 +7,11 @@ body {
   font-weight: 300;
 }
 
+h2{
+  margin-bottom: 2rem;
+  padding-top: 2rem;
 
+}
 
 
 
@@ -19,6 +23,7 @@ h1 {
 
 .thumbs {
   margin-bottom: 2rem;
+  
 }
 
 .navigation ul {
@@ -122,6 +127,7 @@ padding:20px 30px
   /* -webkit-transition: transform 2s ease-in-out; */
   /* -moz-transition: transform 2s ease-in-out; */
   transition: transform .1s ease-in-out;
+  border-radius: 30px;
 }
 .prodimg:hover {
   transform: scale(105%);
@@ -136,4 +142,36 @@ background-color:rgb(222, 118, 33);
 color: rgb(181, 231, 208);
 padding: 2rem
 
+}
+.forms{
+
+  margin-top:1rem;
+}
+
+.inputw{
+padding-top:1rem;
+
+}
+
+.pays{
+
+  margin:.25rem;
+}
+
+#carouselExampleAutoplaying{
+
+margin-bottom: 8rem;
+
+}
+
+.carousel-item img{
+  /* border-radius: 30px; */
+}
+
+.text-primary {
+  color: rgb(222, 118, 33) !important;
+}
+
+.bg-primary {
+  background-color: green !important;
 }
